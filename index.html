@@ -8,16 +8,21 @@
     body {
         margin: 0;
         padding: 0;
-        background-color: #f0f0f0; /* Change background color if needed*/
+        background-color: #000000; /* CHANGE THE WEBSITE BACKGROUND COLOR TO MATCH THE POSTER EDGE */
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        height: 100vh; /* FORCES THE CONTAINER TO BE EXACTLY THE SCREEN HEIGHT */
+        overflow: hidden; /* DISABLE SCROLLING */
     }
     img {
         max-width: 100%;
+        max-height: 100vh; /* THIS FIXES DISPLAY CONFORMITY FOR LAPTOPS */
+        width: auto;
         height: auto;
         display: block;
+        object-fit: contain; /* ENSURES THE WHOLE POSTER IS VISIBLE WITHOUT CROPPING */
+        box-shadow: 0 0 20px rgba(0,0,0,0.5); /* ADDS A SUBTLE SHADOW FOR DEPTH */
     }
   </style>
 </head>
