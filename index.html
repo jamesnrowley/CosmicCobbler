@@ -15,6 +15,7 @@
         height: 100vh; /* FORCES THE CONTAINER TO BE EXACTLY THE SCREEN HEIGHT */
         overflow: hidden; /* DISABLE SCROLLING */
     }
+    
     img {
         max-width: 100%;
         max-height: 100vh; /* THIS FIXES DISPLAY CONFORMITY FOR LAPTOPS */
@@ -27,6 +28,10 @@
   </style>
 </head>
 <body>
-  <img src="cosmiccobblerposter1.svg" alt="Welcome Poster">
+    <Picture>
+        <source media="(max-width: 768px)" srcset="cosmiccobblerposterMobile.svg">
+
+        <img src="cosmiccobblerposterWeb.svg" alt="Welcome Poster"
+    </Picture>
 </body>
 </html>
