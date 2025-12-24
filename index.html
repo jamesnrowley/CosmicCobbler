@@ -8,12 +8,23 @@
     body {
         margin: 0;
         padding: 0;
+        
+        /* LAPTOP/DESKTOP SETTINGS */
+        
         background-color: #ffc158; /* CHANGE THE WEBSITE BACKGROUND COLOR TO MATCH THE POSTER EDGE */
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh; /* FORCES THE CONTAINER TO BE EXACTLY THE SCREEN HEIGHT */
         overflow: hidden; /* DISABLE SCROLLING */
+    }
+
+    /* PHONE SETTINGS */
+    /* THIS SECTION ONLY ACTIVATES ON SCREENS NARROWER THAN 768PX */
+    @media (max-width: 768px) {
+        body {
+            background-color: #000000; /* FORCES BLACK BACKGROUND ON PHONES */
+        }
     }
     
     img {
